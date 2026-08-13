@@ -89,3 +89,8 @@ After this tutorial, read the official source in this order:
 | Typed events (declaration merging) | an official engineering detail; mini uses string event names |
 
 These gaps are great practice problems — e.g. "add a sandbox plugin to mini-dsh that listens to `tools/pre-execute` and blocks dangerous commands". You now know exactly where to start.
+
+## After This Tutorial
+
+- For an architectural comparison of DeepSeek Harness with mainstream coding agents (Claude Code / Pi / Cursor...), see [vs Mainstream Coding Agents](comparison).
+- To try the official `dsh` directly: `npx @deepseek-ai/dsh web`.

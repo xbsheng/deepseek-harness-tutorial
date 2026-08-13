@@ -88,4 +88,9 @@ turn/end
 | HMR 热重载 | 官方开发体验的一部分 |
 | 类型化事件(声明合并) | 官方工程细节,mini 用字符串事件名 |
 
-这些差异本身就是很好的练习题目 —— 比如「给 mini-dsh 加一个沙箱插件,监听 `tools/pre-execute` 拦截危险命令」,现在你应该知道从哪下手了。
+这些缺口是绝佳的练习课题——比如「给 mini-dsh 加一个沙箱插件:监听 `tools/pre-execute` 拦截危险命令」。你现在已经知道该从哪里下手。
+
+## 看完本教程之后
+
+- 想了解 DeepSeek Harness 与 Claude Code / Pi / Cursor 等主流 coding agent 的架构对比,见[与主流 Coding Agent 对比](comparison)。
+- 想直接上手官方 `dsh`:`npx @deepseek-ai/dsh web`。

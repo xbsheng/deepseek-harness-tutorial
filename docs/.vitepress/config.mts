@@ -33,6 +33,7 @@ const zhSidebar = [
     items: [
       { text: "VitePress + GitHub Pages 部署", link: "/12-deploy" },
       { text: "附录:与官方架构对照", link: "/reference/mapping" },
+      { text: "附录:与主流 Coding Agent 对比", link: "/reference/comparison" },
     ],
   },
 ];
@@ -70,6 +71,7 @@ const enSidebar = [
     items: [
       { text: "VitePress + GitHub Pages", link: "/en/12-deploy" },
       { text: "Appendix: Mapping to the Official Codebase", link: "/en/reference/mapping" },
+      { text: "Appendix: vs Mainstream Coding Agents", link: "/en/reference/comparison" },
     ],
   },
 ];
