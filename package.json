@@ -1,0 +1,15 @@
+{
+  "name": "deepseek-harness-tutorial",
+  "version": "1.0.0",
+  "private": true,
+  "description": "从零实现简易版 DeepSeek Harness —— VitePress 教程站",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.0"
+  }
+}

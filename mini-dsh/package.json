@@ -1,0 +1,20 @@
+{
+  "name": "mini-dsh",
+  "version": "0.1.0",
+  "private": true,
+  "description": "简易版 DeepSeek Harness:一切皆插件的 agent 执行层(TS 教学实现)",
+  "type": "module",
+  "scripts": {
+    "chat": "tsx src/cli.ts chat",
+    "run": "tsx src/cli.ts run",
+    "web": "tsx src/cli.ts web",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
