@@ -1,0 +1,5 @@
+packages:
+  - 'mini-dsh'
+
+allowBuilds:
+  esbuild: true

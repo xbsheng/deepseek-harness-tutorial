@@ -2,9 +2,8 @@
 layout: home
 
 hero:
-  name: "从零实现 DeepSeek Harness"
-  text: "一切皆插件的智能体执行层"
-  tagline: 2026 年 8 月 13 日,DeepSeek 官方开源了 deepseek-ai/deepseek-harness(MIT)。本教程基于它的设计理念,带你从零到一用 TypeScript 实现一个包含核心功能的简易版 —— mini-dsh,全程可运行、可测试。
+  name: '从零实现 DeepSeek Harness'
+  text: '一切皆插件的智能体执行层'
   image:
     src: /deepseek-logo-dark.svg
     alt: DeepSeek

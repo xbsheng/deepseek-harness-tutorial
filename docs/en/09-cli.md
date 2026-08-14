@@ -8,9 +8,9 @@ Framework and plugins are in place. Now we give mini-dsh a "mouth": three run mo
 
 | Command | What it does | Official counterpart |
 |---|---|---|
-| `npm run chat` | Interactive REPL, prints as it generates | `dsh` interactive mode |
-| `npm run run "task"` | One-shot task execution, prints the result | `dsh --profile headless "task"` |
-| `npm run web` | Starts the browser UI | `dsh web` |
+| `pnpm chat` | Interactive REPL, prints as it generates | `dsh` interactive mode |
+| `pnpm run run "task"` | One-shot task execution, prints the result | `dsh --profile headless "task"` |
+| `pnpm web` | Starts the browser UI | `dsh web` |
 
 ## Implementation
 
@@ -86,11 +86,13 @@ Output (real execution — `run_bash` really invoked `echo 1+1 | bc`):
 
 ```bash
 export DEEPSEEK_API_KEY=sk-your-key
-npm run run "write a bubble sort and save it to sort.py"
+pnpm run run "write a bubble sort and save it to sort.py"
 
 # or point at any OpenAI-compatible endpoint (local vLLM, gateway...)
 export DEEPSEEK_BASE_URL=https://your-endpoint
-npm run chat
+# default model is deepseek-chat; switch via env (e.g. opencode endpoints)
+export DEEPSEEK_MODEL=deepseek-v4-flash
+pnpm chat
 ```
 
 ::: tip Troubleshooting

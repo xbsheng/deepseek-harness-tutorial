@@ -16,8 +16,8 @@
 ## Running the Tests
 
 ```bash
-npm test          # vitest run
-npm run typecheck # tsc --noEmit
+pnpm test          # vitest run
+pnpm typecheck    # tsc --noEmit
 ```
 
 Real output:
@@ -122,7 +122,7 @@ it("/api/chat streams deltas over SSE and ends with a done event", async () => {
 
 ```bash
 export DEEPSEEK_API_KEY=sk-xxx
-npm run run "What is 1+1? compute it with the run_bash tool"
+pnpm run run "What is 1+1? compute it with the run_bash tool"
 ```
 
 Expect: the model requests a tool → `tool/result` content `2` → final answer. The whole chain (plugins → loop → LLM → tools → log) is verified in one shot.

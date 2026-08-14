@@ -5,21 +5,21 @@
 | Tool | Version | Notes |
 |---|---|---|
 | Node.js | ≥ 18 (22+ recommended) | We use Node's built-in `fetch` — zero runtime dependencies |
-| npm / pnpm | any | The official uses pnpm; npm is enough here |
+| pnpm | any | The official uses pnpm too, so do we |
 
 Verify:
 
 ```bash
 node --version   # v22.x
-npm --version    # 10.x
+pnpm --version   # 10.x+
 ```
 
 ## Create the Project
 
 ```bash
 mkdir mini-dsh && cd mini-dsh
-npm init -y
-npm install -D typescript tsx vitest @types/node
+pnpm init
+pnpm add -D typescript tsx vitest @types/node
 ```
 
 - `typescript` — type checking (`tsc --noEmit`)

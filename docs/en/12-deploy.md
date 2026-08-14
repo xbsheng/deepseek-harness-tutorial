@@ -14,8 +14,8 @@
 At the project root:
 
 ```bash
-npm init -y
-npm install -D vitepress
+pnpm init
+pnpm add -D vitepress
 mkdir docs
 ```
 
@@ -93,12 +93,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run docs:build
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm docs:build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
@@ -128,10 +129,10 @@ GitHub's OAuth token may lack `workflow` scope, and pushes that touch `.github/w
 
 ```bash
 # local build (a failed build = dead links or syntax errors in the docs — a free check)
-npm run docs:build
+pnpm docs:build
 
 # local preview
-npm run docs:preview
+pnpm docs:preview
 # → http://127.0.0.1:4173/deepseek-harness-tutorial/
 
 # after deploy

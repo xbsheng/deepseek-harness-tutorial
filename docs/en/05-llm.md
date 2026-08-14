@@ -139,7 +139,7 @@ it("streaming text: chunks emitted piece by piece, final message complete", asyn
 ::: tip Hooking up a real API
 ```bash
 export DEEPSEEK_API_KEY=sk-xxx
-npm run run "write a bubble sort for me"
+pnpm run run "write a bubble sort for me"
 ```
 `base_url` can point at any OpenAI-compatible endpoint — that's the power of the seam.
 :::

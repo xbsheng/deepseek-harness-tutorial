@@ -210,7 +210,7 @@ Typical use (official scenario): `agent/turn-stopping` — several plugins decid
 Every mini-Cordis semantic is backed by a real test (`test/context.test.ts`):
 
 ```bash
-npm test
+pnpm test
 ```
 
 <CodeGroup>

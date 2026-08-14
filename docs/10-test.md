@@ -16,8 +16,8 @@
 ## 跑测试
 
 ```bash
-npm test          # vitest run
-npm run typecheck # tsc --noEmit
+pnpm test          # vitest run
+pnpm typecheck    # tsc --noEmit
 ```
 
 真实输出:
@@ -107,7 +107,7 @@ boot 集成测试则验证完整组装:scripted 模式走 `buildAgent()`,fs 插�
 
 ```bash
 export DEEPSEEK_API_KEY=sk-xxx
-npm run run "1+1 等于多少?用 run_bash 工具算"
+pnpm run run "1+1 等于多少?用 run_bash 工具算"
 ```
 
 预期看到:模型请求工具 → `tool/result` 内容 `2` → 最终答案。整个链路(插件 → 循环 → LLM → 工具 → 日志)一次验证。

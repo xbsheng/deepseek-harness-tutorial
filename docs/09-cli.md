@@ -8,9 +8,9 @@
 
 | 命令 | 说明 | 对应官方 |
 |---|---|---|
-| `npm run chat` | 交互式 REPL,边生成边打印 | `dsh` 交互模式 |
-| `npm run run "任务"` | 一次性执行任务,打印结果 | `dsh --profile headless "task"` |
-| `npm run web` | 启动浏览器 UI | `dsh web` |
+| `pnpm chat` | 交互式 REPL,边生成边打印 | `dsh` 交互模式 |
+| `pnpm run run "任务"` | 一次性执行任务,打印结果 | `dsh --profile headless "task"` |
+| `pnpm web` | 启动浏览器 UI | `dsh web` |
 
 ## 实现
 
@@ -86,11 +86,13 @@ npx tsx demo.ts
 
 ```bash
 export DEEPSEEK_API_KEY=sk-你的key
-npm run run "帮我写一个冒泡排序,并保存到 sort.py"
+pnpm run run "帮我写一个冒泡排序,并保存到 sort.py"
 
 # 或者指定任意 OpenAI 兼容端点(本地 vLLM、兼容网关...)
 export DEEPSEEK_BASE_URL=https://你的端点
-npm run chat
+# 默认模型 deepseek-chat,可换(opencode 端点等)
+export DEEPSEEK_MODEL=deepseek-v4-flash
+pnpm chat
 ```
 
 ::: tip 故障排查

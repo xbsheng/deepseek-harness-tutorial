@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "从零实现简易版 DeepSeek Harness —— VitePress 教程站",
+  "packageManager": "pnpm@11.2.2",
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",

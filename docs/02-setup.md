@@ -5,21 +5,21 @@
 | 工具 | 版本 | 说明 |
 |---|---|---|
 | Node.js | ≥ 18(推荐 22+) | 我们用 Node 内置的 `fetch`,不需要任何运行时依赖 |
-| npm / pnpm | 任意 | 官方用 pnpm,我们用 npm 就够 |
+| pnpm | 任意 | 官方也用 pnpm,我们跟着用 |
 
 验证环境:
 
 ```bash
 node --version   # v22.x
-npm --version    # 10.x
+pnpm --version   # 10.x+
 ```
 
 ## 创建项目
 
 ```bash
 mkdir mini-dsh && cd mini-dsh
-npm init -y
-npm install -D typescript tsx vitest @types/node
+pnpm init
+pnpm add -D typescript tsx vitest @types/node
 ```
 
 - `typescript` —— 类型检查(`tsc --noEmit`)

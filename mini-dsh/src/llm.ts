@@ -51,7 +51,7 @@ export class DeepSeekProvider implements LLMProvider {
   constructor(opts: DeepSeekOptions = {}) {
     this.baseURL = (opts.baseURL ?? process.env.DEEPSEEK_BASE_URL ?? DEFAULT_BASE_URL).replace(/\/$/, "");
     this.apiKey = opts.apiKey ?? process.env.DEEPSEEK_API_KEY ?? "";
-    this.model = opts.model ?? DEFAULT_MODEL;
+    this.model = opts.model ?? process.env.DEEPSEEK_MODEL ?? DEFAULT_MODEL;
     this.timeoutMs = opts.timeoutMs ?? 180_000;
     // 注意:key 检查延迟到首次 stream(),让 dsh web 等形态可以无 key 启动
   }

@@ -2,9 +2,8 @@
 layout: home
 
 hero:
-  name: "Build DeepSeek Harness from Scratch"
-  text: "An agent harness where everything is a plugin"
-  tagline: On August 13, 2026, DeepSeek open-sourced deepseek-ai/deepseek-harness (MIT). This tutorial follows its design philosophy and walks you through building a simplified version — mini-dsh — in TypeScript, from zero to one. Everything is runnable and tested.
+  name: 'Build DeepSeek Harness from Scratch'
+  text: 'An agent harness where everything is a plugin'
   image:
     src: /deepseek-logo-dark.svg
     alt: DeepSeek

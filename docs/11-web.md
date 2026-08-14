@@ -81,7 +81,7 @@ for (;;) {
 ## 运行
 
 ```bash
-npm run web
+pnpm web
 # mini-dsh web: http://127.0.0.1:3080
 ```
 

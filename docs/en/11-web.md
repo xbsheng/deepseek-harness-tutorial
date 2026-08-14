@@ -81,7 +81,7 @@ Note the buffer handling: `buf` may hold a partial line, kept for the next round
 ## Run
 
 ```bash
-npm run web
+pnpm web
 # mini-dsh web: http://127.0.0.1:3080
 ```
 

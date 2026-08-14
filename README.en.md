@@ -21,15 +21,17 @@ A complete Chinese tutorial (with this English version) that walks you through b
 ## mini-dsh Quick Start
 
 ```bash
+# pnpm workspace: one install at the root covers both docs and mini-dsh
+pnpm install
+
 cd mini-dsh
-npm install
-npm test          # 25/25 tests
-npm run demo      # scripted end-to-end demo (no API key needed)
+pnpm test          # 25/25 tests
+pnpm run demo      # scripted end-to-end demo (no API key needed)
 
 export DEEPSEEK_API_KEY=sk-xxx
-npm run chat      # interactive REPL
-npm run run "write a bubble sort for me"   # one-shot task
-npm run web       # browser UI (default port 3080, SSE streaming output)
+pnpm chat          # interactive REPL
+pnpm run run "write a bubble sort for me"   # one-shot task
+pnpm web           # browser UI (default port 3080, SSE streaming output)
 ```
 
 ## Tutorial Chapters

@@ -77,7 +77,7 @@ Corresponds to the official `ctx.sessions` — manages multiple sessions (multi-
 
 ## A Real Session Log
 
-This is the **actual output** of `npm run demo` (scripted demo):
+This is the **actual output** of `pnpm run demo` (scripted demo):
 
 ```text
 turn/start           {"agent":"5a1b896f-beb"}

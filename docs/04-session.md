@@ -77,7 +77,7 @@ user/message ──► assistant/message(tool_calls) ──► tool/result ─�
 
 ## 一次真实运行的日志
 
-这是 `npm run demo`(脚本化演示)产出的**真实会话日志**:
+这是 `pnpm run demo`(脚本化演示)产出的**真实会话日志**:
 
 ```text
 turn/start           {"agent":"5a1b896f-beb"}

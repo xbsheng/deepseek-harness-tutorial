@@ -210,7 +210,7 @@ async serial(name: string, payload: any = undefined): Promise<void> {
 mini-Cordis 的每个语义都有真实测试兜底(`test/context.test.ts`):
 
 ```bash
-npm test
+pnpm test
 ```
 
 <CodeGroup>

@@ -14,8 +14,8 @@
 在项目根目录:
 
 ```bash
-npm init -y
-npm install -D vitepress
+pnpm init
+pnpm add -D vitepress
 mkdir docs
 ```
 
@@ -87,12 +87,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run docs:build
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm docs:build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
@@ -122,10 +123,10 @@ GitHub 的 OAuth token 可能没有 `workflow` 权限,推送含 `.github/workflo
 
 ```bash
 # 本地构建(构建失败 = 文档有死链或语法错误,这是免费的检查)
-npm run docs:build
+pnpm docs:build
 
 # 本地预览
-npm run docs:preview
+pnpm docs:preview
 # → http://127.0.0.1:4173/deepseek-harness-tutorial/
 
 # 部署后

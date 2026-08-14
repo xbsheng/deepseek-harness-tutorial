@@ -8,6 +8,7 @@
     "chat": "tsx src/cli.ts chat",
     "run": "tsx src/cli.ts run",
     "web": "tsx src/cli.ts web",
+    "demo": "tsx demo.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },

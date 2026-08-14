@@ -4,7 +4,7 @@
 
 基于最新开源的 [`deepseek-ai/deepseek-harness`](https://github.com/deepseek-ai/deepseek-harness)(2026-08-13 开源,MIT),从零到一实现一个包含核心功能的**简易版智能体框架** —— **mini-dsh** 的完整中文教程。
 
-📖 教程站:**https://xbsheng.github.io/deepseek-harness-tutorial/**(中文默认 · [English Version](https://xbsheng.github.io/deepseek-harness-tutorial/en/))
+📖 教程站: <https://xbsheng.github.io/deepseek-harness-tutorial/>
 
 ## 仓库结构
 
@@ -21,15 +21,17 @@
 ## mini-dsh 快速开始
 
 ```bash
+# pnpm 工作区:根目录一次安装,同时装好 docs 与 mini-dsh
+pnpm install
+
 cd mini-dsh
-npm install
-npm test          # 25/25 测试
-npm run demo      # 脚本化端到端演示(无需 API key)
+pnpm test          # 25/25 测试
+pnpm run demo      # 脚本化端到端演示(无需 API key)
 
 export DEEPSEEK_API_KEY=sk-xxx
-npm run chat      # 交互式 REPL
-npm run run "帮我写一个冒泡排序"   # 一次性任务
-npm run web       # 浏览器 UI(默认 3080 端口,SSE 流式输出)
+pnpm chat          # 交互式 REPL
+pnpm run run "帮我写一个冒泡排序"   # 一次性任务
+pnpm web           # 浏览器 UI(默认 3080 端口,SSE 流式输出)
 ```
 
 ## 教程章节

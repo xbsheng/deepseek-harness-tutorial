@@ -139,7 +139,7 @@ it("流式文本:chunk 逐段产出,最终 message 内容完整", async () => {
 ::: tip 对接真实 API
 ```bash
 export DEEPSEEK_API_KEY=sk-xxx
-npm run run "帮我写一个冒泡排序"
+pnpm run run "帮我写一个冒泡排序"
 ```
 `base_url` 也可以指向任何 OpenAI 兼容端点 —— 这就是缝隙的威力。
 :::
