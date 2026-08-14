@@ -108,6 +108,12 @@ export default defineConfig({
       {},
       `.dark .VPImage.image-src { content: url("/deepseek-harness-tutorial/deepseek-logo-light.svg"); }`,
     ],
+    // 导航标题限宽 + 超长省略号(默认主题不截断,标题长于侧边栏宽度时会溢出)
+    [
+      'style',
+      {},
+      `.VPNavBarTitle{max-width:var(--vp-sidebar-width)}.VPNavBarTitle .title span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}`,
+    ],
   ],
 
   lastUpdated: true,
