@@ -117,6 +117,4 @@ it("/api/chat streams deltas over SSE and ends with a done event", async () => {
 - The SSE upgrade = subscribe to `assistant/chunk` → write to the response stream; zero core changes
 - Frontend ReadableStream parsing; the half-line buffer is the only gotcha
 - `createChatServer` is independently testable; the SSE protocol is asserted by real tests
-
-Next: [Deploy to GitHub Pages →](12-deploy)
 :::

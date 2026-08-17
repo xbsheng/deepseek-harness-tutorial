@@ -117,6 +117,4 @@ it("/api/chat 以 SSE 流推送增量,以 done 事件收尾", async () => {
 - SSE 升级 = 订阅 `assistant/chunk` 事件 → 写入响应流,核心循环零改动
 - 前端 ReadableStream 解析,半行缓冲是唯一的小坑
 - `createChatServer` 独立可测,SSE 协议被测试真实断言
-
-下一步:[部署到 GitHub Pages →](12-deploy)
 :::

@@ -9,7 +9,7 @@ A complete Chinese tutorial (with this English version) that walks you through b
 ## Repository Layout
 
 ```
-├── docs/          # VitePress tutorial site (Chinese default + /en/ English, 12 chapters + appendix)
+├── docs/          # VitePress tutorial site (Chinese default + /en/ English, 11 chapters + appendix)
 ├── mini-dsh/      # The simplified implementation (TS, zero runtime deps, 25 tests all green)
 │   ├── src/       # Core: plugin system / session log / LLM seam / tools / agent loop / SSE Web UI
 │   ├── plugins/   # Example plugins: prompt / Shell / sandboxed FS / skills
@@ -47,8 +47,7 @@ pnpm web           # browser UI (default port 3080, SSE streaming output)
 9. [CLI & Startup](docs/en/09-cli.md)
 10. [Testing & Verification](docs/en/10-test.md)
 11. [Web UI (SSE Streaming)](docs/en/11-web.md)
-12. [VitePress + GitHub Pages Deployment](docs/en/12-deploy.md)
-13. [Appendix: Mapping to the Official Codebase](docs/en/reference/mapping.md)
+12. [Appendix: Mapping to the Official Codebase](docs/en/reference/mapping.md)
 
 ## Disclaimer
 

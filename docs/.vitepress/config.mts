@@ -29,11 +29,10 @@ const zhSidebar = [
     ],
   },
   {
-    text: '发布',
+    text: '附录',
     items: [
-      { text: 'VitePress + GitHub Pages 部署', link: '/12-deploy' },
-      { text: '附录:与官方架构对照', link: '/reference/mapping' },
-      { text: '附录:与主流 Coding Agent 对比', link: '/reference/comparison' },
+      { text: '与官方架构对照', link: '/reference/mapping' },
+      { text: '与主流 Coding Agent 对比', link: '/reference/comparison' },
     ],
   },
 ]
@@ -70,15 +69,14 @@ const enSidebar = [
     ],
   },
   {
-    text: 'Publishing',
+    text: 'Appendix',
     items: [
-      { text: 'VitePress + GitHub Pages', link: '/en/12-deploy' },
       {
-        text: 'Appendix: Mapping to the Official Codebase',
+        text: 'Mapping to the Official Codebase',
         link: '/en/reference/mapping',
       },
       {
-        text: 'Appendix: vs Mainstream Coding Agents',
+        text: 'vs Mainstream Coding Agents',
         link: '/en/reference/comparison',
       },
     ],
@@ -108,11 +106,11 @@ export default defineConfig({
       {},
       `.dark .VPImage.image-src { content: url("/deepseek-harness-tutorial/deepseek-logo-light.svg"); }`,
     ],
-    // 导航标题限宽 + 超长省略号(默认主题不截断,标题长于侧边栏宽度时会溢出)
+    // vitepress 1.6 的 VPNavBar 未可靠设置 has-sidebar class,导航标题容器不会被 sidebar 宽度约束;限宽 + 截断(上游 #5376 合入并升级后可删除)
     [
       'style',
       {},
-      `.VPNavBarTitle{max-width:var(--vp-sidebar-width)}.VPNavBarTitle .title span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}`,
+      `.VPNavBarTitle.has-sidebar .title{max-width:calc(var(--vp-sidebar-width) - 4rem)}.VPNavBarTitle .title span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}`,
     ],
   ],
 

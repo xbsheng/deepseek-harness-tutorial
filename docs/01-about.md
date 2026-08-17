@@ -99,8 +99,7 @@ mini-dsh 用 TypeScript 实现(与官方同语言、同异步模型),**零运行
 | [07 Agent 循环](07-agent) | turn/step 实现 | `core/agent-loop` |
 | [08 示例插件](08-plugins) | 提示词/Shell/文件/技能 | `skill` / `shell` / `fs` |
 | [09 CLI](09-cli) | chat / run / web | `dsh` CLI、profile |
-| [10 测试](10-test) | 23 个测试的写法和跑法 | `testing.md` 策略 |
-| [12 部署](12-deploy) | 本教程站上线 GitHub Pages | —— |
+| [10 测试](10-test) | 25 个测试的写法和跑法 | `testing.md` 策略 |
 
 ::: warning 声明
 本教程是**独立教学项目**,与 DeepSeek 官方无隶属关系。mini-dsh 是「概念同构的简化实现」,并非官方代码的搬运 —— 官方仓库是 50 个包的 TS monorepo,我们只复刻其核心设计,细节上做了大量简化(例如瀑布流从 `(...args, next)` 简化为单值传递)。学完本教程后,再去看官方仓库,你会发现自己已经能读懂大半。

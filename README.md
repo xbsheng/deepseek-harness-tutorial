@@ -9,7 +9,7 @@
 ## 仓库结构
 
 ```
-├── docs/          # VitePress 教程站(中文默认 + /en/ 英文版,12 章 + 附录)
+├── docs/          # VitePress 教程站(中文默认 + /en/ 英文版,11 章 + 附录)
 ├── mini-dsh/      # 简易版实现(TS,零运行时依赖,25 个测试全绿)
 │   ├── src/       # 核心库:插件系统/会话日志/LLM 缝隙/工具系统/Agent 循环/SSE Web UI
 │   ├── plugins/   # 示例插件:提示词/Shell/文件(沙箱)/技能
@@ -47,8 +47,7 @@ pnpm web           # 浏览器 UI(默认 3080 端口,SSE 流式输出)
 9. [CLI 与启动](docs/09-cli.md)
 10. [测试与验证](docs/10-test.md)
 11. [可选:Web UI](docs/11-web.md)
-12. [VitePress + GitHub Pages 部署](docs/12-deploy.md)
-13. [附录:与官方架构对照](docs/reference/mapping.md)
+12. [附录:与官方架构对照](docs/reference/mapping.md)
 
 ## 免责声明
 

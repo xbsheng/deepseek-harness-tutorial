@@ -101,7 +101,6 @@ mini-dsh is written in TypeScript (same language, same async model as the offici
 | [09 CLI](09-cli) | chat / run / web | `dsh` CLI, profile |
 | [10 Testing](10-test) | 25 tests, how they are written and run | `docs/testing.md` |
 | [11 Web UI](11-web) | SSE streaming chat in the browser | `dsh web` |
-| [12 Deploy](12-deploy) | This site on GitHub Pages | — |
 
 ::: warning Disclaimer
 This tutorial is an **independent teaching project** with no affiliation to DeepSeek. mini-dsh is a "concept-isomorphic simplified implementation", not a copy of the official code — the official repo is a 50-package TypeScript monorepo; we reimplement only its core design and simplify details aggressively (e.g. waterfall is reduced from `(...args, next)` to single-value passing). After this tutorial, you will already understand most of the official repo.
